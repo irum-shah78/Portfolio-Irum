@@ -1,7 +1,6 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   let menuBtn = document.getElementById("myNavMenu");
-
   if (menuBtn.className === "nav-menu") {
     menuBtn.className += " responsive";
   } else {
@@ -19,8 +18,7 @@ let typingEffect = new Typed(".typedText", {
 })
 
 /* ----- CHANGE ACTIVE LINK ----- */
-const sections = document.querySelectorAll('section[id]')
-
+const sections = document.querySelectorAll('section[id]');
 function scrollActive() {
   const scrollY = window.scrollY;
 
@@ -30,19 +28,10 @@ function scrollActive() {
       sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-
       document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-
     } else {
-
       document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
     }
   })
 }
-
 window.addEventListener('scroll', scrollActive);
-
-
-
-
