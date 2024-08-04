@@ -7,7 +7,6 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
-
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText", {
   strings: ["Developer"],
@@ -15,13 +14,11 @@ let typingEffect = new Typed(".typedText", {
   typeSpeed: 100,
   backSpeed: 80,
   backDelay: 2000
-})
-
+});
 /* ----- CHANGE ACTIVE LINK ----- */
 const sections = document.querySelectorAll('section[id]');
 function scrollActive() {
   const scrollY = window.scrollY;
-
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 50,
