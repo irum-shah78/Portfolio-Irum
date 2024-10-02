@@ -1,4 +1,3 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   let menuBtn = document.getElementById("myNavMenu");
   if (menuBtn.className === "nav-menu") {
@@ -7,7 +6,6 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
-/* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText", {
   strings: ["Developer"],
   loop: true,
@@ -15,7 +13,7 @@ let typingEffect = new Typed(".typedText", {
   backSpeed: 80,
   backDelay: 2000
 });
-/* ----- CHANGE ACTIVE LINK ----- */
+
 const sections = document.querySelectorAll('section[id]');
 function scrollActive() {
   const scrollY = window.scrollY;
